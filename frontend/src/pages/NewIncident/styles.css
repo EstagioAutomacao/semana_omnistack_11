@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .new-incidents-container .content {
@@ -13,6 +14,7 @@
   padding: 95px;
   background: #f0f0f5;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +26,7 @@
 }
 
 .new-incidents-container .content section h1 {
-  margin: 64px 0 32px;
+  margin: 64px 32px;
   font-size: 32px;
 }
 
@@ -55,4 +57,16 @@
 
 .input-group input + input {
   margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  .new-incidents-container {
+    padding: 0;
+  }
+  .new-incidents-container .content {
+    padding: 10px 0;
+  }
+  .new-incidents-container .content section h1 {
+    margin: 10px 0;
+  }
 }

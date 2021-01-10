@@ -4,27 +4,31 @@
   height: 100vh;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
 .register-container .content {
+  margin: 0 auto;
   width: 100%;
   padding: 95px;
   background: #f0f0f5;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
 .register-container .content section {
+  margin: 0 auto;
   width: 100%;
   max-width: 300px;
 }
 
 .register-container .content section h1 {
-  margin: 64px 0 32px;
+  margin: 64px 32px;
   font-size: 32px;
 }
 
@@ -35,8 +39,9 @@
 }
 
 .register-container .content form {
+  margin: 10px auto;
   width: 100%;
-  max-width: 450px;
+  max-width: 400px;
 }
 
 .register-container .content form input {
@@ -51,4 +56,19 @@
 
 .input-group input + input {
   margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  .register-container {
+    padding: 0;
+  }
+  .input-group input + input {
+    margin-left: 0;
+  }
+  .register-container .content {
+    padding: 0;
+  }
+  .register-container .content section h1 {
+    margin: 0;
+  }
 }
